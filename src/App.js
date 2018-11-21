@@ -4,13 +4,25 @@ import Timer from './Timer'
 
 class App extends Component {
 
+  handleAddTimer = () => {
+    console.log("in handler city")
+  }
   //no props being used here, so we can use the shorthand declaration of state
   state = {
     timerIDs: []
   }
 
+  componentDidMount(){
+   this.handleAddTimer(this.setState({
+     newTimerId = [...this.timerIDs, data]
+     
+   }))
+  }
 
-  //Your code here:
+  componentWillUnmount(){
+    
+  }
+
 
 
 
